@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shatrudhan Sah</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+      padding: 45px 25px;
+      background: #1e293b;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #cbd5e1;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    button {
+      border: none;
+      padding: 13px 25px;
+      border-radius: 10px;
+      background: #38bdf8;
+      color: #082f49;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    #message {
+      margin-top: 20px;
+      color: #38bdf8;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>🚀 Website is Working!</h1>
+
+    <p>
+      Welcome to my GitHub website.
+    </p>
+
+    <button onclick="testWebsite()">
+      Test Website
+    </button>
+
+    <div id="message"></div>
+  </div>
+
+  <script>
+    function testWebsite() {
+      document.getElementById("message").textContent =
+        "✅ JavaScript is working perfectly!";
+    }
+  </script>
+
+</body>
+</html>
